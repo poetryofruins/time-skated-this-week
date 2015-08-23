@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How much did you spend on skates this week</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('#time_on_skates').on('change', function() {
+          $('#range_hours').text($(this).val());
+          $('#result_percent').text(
+            (($(this).val()/168)*100).toFixed(1)
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>How much time did you spend this week on skates?</h1>
+      
+      <p>
+        <input type="range" id="time_on_skates" min="0" max="168" step="1" value="0">
+        <span id="range_hours">0</span> hours
+      </p>
+      
+      <section id="results">
+        <p>You spent <span id="result_percent">0</span>% of this week on skates.</p>
+      </section>
+    </main>
+  </body>
+</html>
