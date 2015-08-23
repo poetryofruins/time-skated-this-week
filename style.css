@@ -1,0 +1,25 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+main {
+  width: 800px;
+  margin: 0px auto;
+  position: absolute;
+  top: 20%;
+  left: 100px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+}
+
+#time_on_skates {
+  width: 600px;
+}
+
+#results {
+  font-size: 32px;
+}
