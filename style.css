@@ -4,20 +4,27 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   text-align: center;
+  overflow: hidden;
 }
 
 main {
   width: 800px;
-  margin: 0px auto;
   position: absolute;
-  top: 20%;
+  bottom: 100px;
   left: 100px;
   background: rgba(0,0,0,0.85);
   color: #fff;
+  padding: 50px;
 }
 
 #time_on_skates {
   width: 600px;
+}
+
+#range_hours {
+  display: inline-block;
+  width: 64px;
+  font-size: 24px;
 }
 
 #results {
